@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Body Mass Index Calculator</title>
+  <meta name="description" content="A beautiful and functional BMI calculator.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,20 +28,35 @@
       </p>
 
       <aside class="calculator">
-        Enter your details below
+        <h3>Enter your details below</h3>
 
-        Metric
-        Imperial
+        <label for="metric">
+          <input type="radio" name="unit" id="metric">
+          Metric
+        </label>
 
-        Height
-        Weight
+        <label for="imperial">
+          <input type="radio" name="unit" id="imperial">
+          Imperial
+        </label>
 
-        Your BMI is...
+        <div class="input-wrapper">
+          <label for="height">Height</label>
+          <input type="number" name="measure" id="height">
+        </div>
 
-        <!-- add score -->
+        <div class="input-wrapper">
+          <label for="weight">Weight</label>
+          <input type="number" name="measure" id="weight">
+        </div>
 
-        Your BMI suggests you're <!-- add classification -->.
-        Your ideal weight is between <!-- add range -->.
+        <div class="bmi-output">
+          Your BMI is...
+          <!-- add score -->
+          Your BMI suggests you're <!-- add classification -->.
+          Your ideal weight is between <!-- add range -->.
+        </div>
+
       </aside>
     </section>
 
@@ -53,26 +74,31 @@
     </section>
 
     <section class="tips-section">
-      Healthy eating
 
-      <p class="body-text">
-        Healthy eating promotes weight control, disease prevention, better digestion,
-        immunity, mental clarity, and mood.
-      </p>
+      <div class="tip-card">
+        <h3 class="tip-title">Healthy eating</h3>
+        <p class="body-text">
+          Healthy eating promotes weight control, disease prevention, better digestion,
+          immunity, mental clarity, and mood.
+        </p>
+      </div>
 
-      Regular exercise
+      <div class="tip-card">
+        <h3 class="tip-title">Regular exercise</h3>
+        <p class="body-text">
+          Exercise improves fitness, aids weight control, elevates mood, and reduces disease
+          risk, fostering wellness and longevity.
+        </p>
+      </div>
 
-      <p class="body-text">
-        Exercise improves fitness, aids weight control, elevates mood, and reduces disease
-        risk, fostering wellness and longevity.
-      </p>
+      <div class="tip-card">
+        <h3 class="tip-title">Adequate sleep</h3>
+        <p class="body-text">
+          Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
+          overall restoration and rejuvenation.
+        </p>
+      </div>
 
-      Adequate sleep
-
-      <p class="body-text">
-        Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
-        overall restoration and rejuvenation.
-      </p>
     </section>
 
     <section class="limitations-section">
@@ -84,27 +110,48 @@
         certain cases, the measurement may not be beneficial to use.
       </p>
 
-      Gender
-      The development and body fat composition of girls and boys vary with age. Consequently,
-      a child's age and gender are considered when evaluating their BMI.
+      <div class="limitation-card">
+        <h3 class="limitation-title">Gender</h3>
+        <p class="body-text">
+          The development and body fat composition of girls and boys vary with age. Consequently,
+          a child's age and gender are considered when evaluating their BMI.
+        </p>
+      </div>
 
-      Age
-      In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
-      body fat content.
+      <div class="limitation-card">
+        <h3 class="limitation-title">Age</h3>
+        <p class="body-text">
+          In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
+          body fat content.
+        </p>
+      </div>
 
-      Muscle
-      BMI may misclassify muscular individuals as overweight or obese, as it doesn't
-      differentiate muscle from fat.
+      <div class="limitation-card">
+        <h3 class="limitation-title">Muscle</h3>
+        <p class="body-text">
+          BMI may misclassify muscular individuals as overweight or obese, as it doesn't
+          differentiate muscle from fat.
+        </p>
+      </div>
 
-      Pregnancy
-      Expectant mothers experience weight gain due to their growing baby. Maintaining a
-      healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
-      and child.
+      <div class="limitation-card">
+        <h3 class="limitation-title">Pregnancy</h3>
+        <p class="body-text">
+          Expectant mothers experience weight gain due to their growing baby. Maintaining a
+          healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
+          and child.
+        </p>
+      </div>
 
-      Race
-      Certain health concerns may affect individuals of some Black and Asian origins at
-      lower BMIs than others. To learn more, it is advised to discuss this with your
-      GP or practice nurse.
+      <div class="limitation-card">
+        <h3 class="limitation-title">Race</h3>
+        <p class="body-text">
+          Certain health concerns may affect individuals of some Black and Asian origins at
+          lower BMIs than others. To learn more, it is advised to discuss this with your
+          GP or practice nurse.
+        </p>
+      </div>
+
     </section>
 
   </main>
