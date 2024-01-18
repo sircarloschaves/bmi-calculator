@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
@@ -14,13 +14,18 @@
 </head>
 
 <body>
+  <div class="main_bg" aria-hidden="true"></div>
+  
+  <header class="page_header">
+    <img src="assets/images/logo.svg" alt="" class="logo">
+  </header>
 
   <main>
 
-    <section class="hero-section">
-      <h1 class="hero-title">Body Mass Index Calculator</h1>
+    <section class="hero_section">
+      <h1 class="hero_title">Body Mass Index Calculator</h1>
 
-      <p class="hero-text">
+      <p class="hero_text">
         Better understand your weight in relation to your height using our
         body mass index (BM) calculator. While BMI is not the sole determinant
         of a healthy weight, it offers a valuable starting point to evaluate
@@ -28,7 +33,7 @@
       </p>
 
       <aside class="calculator">
-        <h3>Enter your details below</h3>
+        <h3 class="calculator_title">Enter your details below</h3>
 
         <label for="metric">
           <input type="radio" name="unit" id="metric">
@@ -40,17 +45,17 @@
           Imperial
         </label>
 
-        <div class="input-wrapper">
+        <div class="input_wrapper">
           <label for="height">Height</label>
           <input type="number" name="measure" id="height">
         </div>
 
-        <div class="input-wrapper">
+        <div class="input_wrapper">
           <label for="weight">Weight</label>
           <input type="number" name="measure" id="weight">
         </div>
 
-        <div class="bmi-output">
+        <div class="bmi_output_card">
           Your BMI is...
           <!-- add score -->
           Your BMI suggests you're <!-- add classification -->.
@@ -60,10 +65,10 @@
       </aside>
     </section>
 
-    <section class="your-result-section">
-      <h2 class="section-subtitle">What your BMI result means</h2>
+    <section class="your_result_section">
+      <h2 class="section_subtitle">What your BMI result means</h2>
 
-      <p class="body-text">
+      <p class="body_text">
         A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
         healthy weight may lower your chances of experiencing health issues later on,
         such as obesity and type 2 diabetes . Aim for a nutritious diet with reduced
@@ -73,27 +78,27 @@
       </p>
     </section>
 
-    <section class="tips-section">
+    <section class="tips_section">
 
-      <div class="tip-card">
-        <h3 class="tip-title">Healthy eating</h3>
-        <p class="body-text">
+      <div class="tip_card">
+        <h3 class="tip_title">Healthy eating</h3>
+        <p class="body_text">
           Healthy eating promotes weight control, disease prevention, better digestion,
           immunity, mental clarity, and mood.
         </p>
       </div>
 
-      <div class="tip-card">
-        <h3 class="tip-title">Regular exercise</h3>
-        <p class="body-text">
+      <div class="tip_card">
+        <h3 class="tip_title">Regular exercise</h3>
+        <p class="body_text">
           Exercise improves fitness, aids weight control, elevates mood, and reduces disease
           risk, fostering wellness and longevity.
         </p>
       </div>
 
-      <div class="tip-card">
-        <h3 class="tip-title">Adequate sleep</h3>
-        <p class="body-text">
+      <div class="tip_card">
+        <h3 class="tip_title">Adequate sleep</h3>
+        <p class="body_text">
           Sleep enhances mental clarity, emotional stability, and physical wellness, promoting
           overall restoration and rejuvenation.
         </p>
@@ -101,51 +106,51 @@
 
     </section>
 
-    <section class="limitations-section">
-      <h2 class="section-subtitle">Limitations of BMI</h2>
+    <section class="limitations_section">
+      <h2 class="section_subtitle">Limitations of BMI</h2>
 
-      <p class="body-text">
+      <p class="body_text">
         Although BMI is often a practical indicator of healthy weight, it is not suited for
         every person. Specific groups should carefully consider their BMI outcomes, and in
         certain cases, the measurement may not be beneficial to use.
       </p>
 
-      <div class="limitation-card">
-        <h3 class="limitation-title">Gender</h3>
-        <p class="body-text">
+      <div class="limitation_card">
+        <h3 class="limitation_title">Gender</h3>
+        <p class="body_text">
           The development and body fat composition of girls and boys vary with age. Consequently,
           a child's age and gender are considered when evaluating their BMI.
         </p>
       </div>
 
-      <div class="limitation-card">
-        <h3 class="limitation-title">Age</h3>
-        <p class="body-text">
+      <div class="limitation_card">
+        <h3 class="limitation_title">Age</h3>
+        <p class="body_text">
           In aging individuals, increased body fat and muscle loss may cause BMI to underestimate
           body fat content.
         </p>
       </div>
 
-      <div class="limitation-card">
-        <h3 class="limitation-title">Muscle</h3>
-        <p class="body-text">
+      <div class="limitation_card">
+        <h3 class="limitation_title">Muscle</h3>
+        <p class="body_text">
           BMI may misclassify muscular individuals as overweight or obese, as it doesn't
           differentiate muscle from fat.
         </p>
       </div>
 
-      <div class="limitation-card">
-        <h3 class="limitation-title">Pregnancy</h3>
-        <p class="body-text">
+      <div class="limitation_card">
+        <h3 class="limitation_title">Pregnancy</h3>
+        <p class="body_text">
           Expectant mothers experience weight gain due to their growing baby. Maintaining a
           healthy pre-pregnancy BMI is advisable to minimise health risks for both mother
           and child.
         </p>
       </div>
 
-      <div class="limitation-card">
-        <h3 class="limitation-title">Race</h3>
-        <p class="body-text">
+      <div class="limitation_card">
+        <h3 class="limitation_title">Race</h3>
+        <p class="body_text">
           Certain health concerns may affect individuals of some Black and Asian origins at
           lower BMIs than others. To learn more, it is advised to discuss this with your
           GP or practice nurse.
