@@ -15,7 +15,7 @@
 
 <body>
   <div class="main_bg" aria-hidden="true"></div>
-  
+
   <header class="page_header">
     <img src="assets/images/logo.svg" alt="" class="logo">
   </header>
@@ -35,34 +35,47 @@
       <aside class="calculator">
         <h3 class="calculator_title">Enter your details below</h3>
 
-        <label for="metric">
-          <input type="radio" name="unit" id="metric">
-          Metric
-        </label>
+        <form class="calc_form">
 
-        <label for="imperial">
-          <input type="radio" name="unit" id="imperial">
-          Imperial
-        </label>
+          <div class="radio_wrapper">
+            <div class="metric_wrapper">
+              <input type="radio" name="unit" id="metric">
+              <label for="metric">Metric</label>
+            </div>
 
-        <div class="input_wrapper">
-          <label for="height">Height</label>
-          <input type="number" name="measure" id="height">
-        </div>
+            <div class="imperial_wrapper">
+              <input type="radio" name="unit" id="imperial">
+              <label for="imperial">Imperial</label>
+            </div>
+          </div>
 
-        <div class="input_wrapper">
-          <label for="weight">Weight</label>
-          <input type="number" name="measure" id="weight">
-        </div>
+          <div class="measure_wrapper">
 
-        <div class="bmi_output_card">
-          Your BMI is...
-          <!-- add score -->
-          Your BMI suggests you're <!-- add classification -->.
-          Your ideal weight is between <!-- add range -->.
-        </div>
+            <div class="input_wrapper">
+              <label for="height">Height</label>
+              <div class="container_1">
+                <input type="number" name="measure" id="height" placeholder="0" pattern="[0-9]*">
+              </div>
+            </div>
 
+            <div class="input_wrapper">
+              <label for="weight">Weight</label>
+              <div class="container_2">
+                <input type="number" name="measure" id="weight" placeholder="0" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+
+          <div class="bmi_output_card">
+            Your BMI is...
+            <!-- add score -->
+            Your BMI suggests you're <!-- add classification -->.
+            Your ideal weight is between <!-- add range -->.
+          </div>
+
+        </form>
       </aside>
+
     </section>
 
     <section class="your_result_section">
