@@ -30,6 +30,13 @@
   --clr_darkeletricblue: hsl(215, 17%, 45%);
   --clr_borders: hsl(200, 25%, 88%);
   --clr_purewhite: hsl(0, 0%, 100%);
+  --clr_blue_gradient: linear-gradient(to right, hsl(227, 92%, 58%), hsl(227, 100%, 67%));
+
+  /* Utility classes */
+
+  .text-align-center {
+    text-align: center;
+  }
 }
 
 
@@ -112,16 +119,17 @@ svg {
   font-size: var(--fs_heading_l);
   font-weight: var(--fw_700);
   line-height: var(--lh_heading);
-  text-align: center;
   color: var(--clr_gunmetal);
 }
 
-.hero_text {
+.body_text {
   font-size: var(--fs_body_m);
   font-weight: var(--fw_400);
   line-height: var(--lh_body);
-  text-align: center;
   color: var(--clr_darkeletricblue);
+}
+
+.hero_section .body_text {
   margin-block-start: 1.5rem;
 }
 
@@ -242,7 +250,8 @@ input[type="number"] {
   opacity: 25%;
 }
 
-.measure_wrapper input[type="number"]:focus-visible {
+.measure_wrapper input[type="number"]:focus-visible,
+.measure_wrapper input[type="number"]:hover {
   border: 1px solid var(--clr_blue);
 }
 
@@ -272,4 +281,169 @@ input[type="number"] {
   letter-spacing: calc(-5 * 0.01em);
   padding-inline-end: 1.5rem;
   color: var(--clr_blue);
+}
+
+.bmi_output_card {
+  color: var(--clr_purewhite);
+  background: var(--clr_blue_gradient);
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  margin-block-start: 1.5rem;
+  border-radius: 1rem;
+}
+
+.bmi_output_empty {
+  display: none;
+}
+
+.empty_title {
+  font-size: var(--fs_heading_s);
+  font-weight: var(--fw_700);
+  line-height: var(--lh_heading);
+}
+
+.empty_text {
+  font-size: var(--fs_body_s);
+  font-weight: var(--fw_400);
+  line-height: var(--lh_body);
+  margin-block-start: 1.5rem;
+}
+
+.bmi_output_result {
+  display: block;
+}
+
+.result_title {
+  font-size: var(--fs_body_m);
+  font-weight: var(--fw_700);
+}
+
+.result_score {
+  font-size: var(--fs_heading_l);
+  font-weight: var(--fw_700);
+  line-height: var(--lh_heading);
+  letter-spacing: calc(-5 * 0.01em);
+  margin-block-start: 0.5rem;
+}
+
+.result_text {
+  font-size: var(--fs_body_s);
+  font-weight: var(--fw_400);
+  line-height: var(--lh_body);
+  margin-block-start: 1.5rem;
+}
+
+.your_result_section {
+  margin-block-start: 4.5rem;
+}
+
+.section_subtitle {
+  font-size: 2rem;
+  font-weight: var(--fw_700);
+  line-height: var(--lh_heading);
+  letter-spacing: calc(-5 * 0.01em);
+  color: var(--clr_gunmetal);
+}
+
+.your_result_section .section_subtitle {
+  padding-inline: 1.5rem;
+  margin-block-start: 3rem;
+}
+
+.your_result_section .body_text {
+  padding-inline: 1.5rem;
+  margin-block-start: 2rem;
+}
+
+.tips_section {
+  background-image: linear-gradient(to right top, hsla(215, 95%, 92%, 0.25), #d6fcfe00);
+  padding-inline-start: 1.19rem;
+  padding-inline-end: 1.81rem;
+  padding-block: 3.5rem;
+  margin-block-start: 4.475625rem;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.tip_icon {
+  width: 4rem;
+}
+
+.tip_title {
+  font-size: var(--fs_heading_m);
+  font-weight: var(--fw_700);
+  letter-spacing: calc(-5 * 0.01em);
+  color: var(--clr_gunmetal);
+  margin-block-start: 2rem;
+}
+
+.tips_section .body_text {
+  margin-block-start: 1.5rem;
+}
+
+.limitations_section {
+  padding-inline-start: 1.1875rem;
+  padding-inline-end: 1.8125rem;
+  padding-block-end: 6rem;
+  margin-block-start: 4.5rem;
+}
+
+.limitation_text {
+  margin-block-start: 2rem;
+}
+
+.limitations_section .cards_wrapper {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 3.5rem;
+}
+
+.card-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.limitation_card {
+  position: relative;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 2rem 3.5rem hsla(211, 41%, 69%, 0.25);
+  background-color: var(--clr_purewhite);
+}
+
+.limitation_card:nth-child(1) {
+  z-index: 1;
+}
+
+.limitation_card:nth-child(2) {
+  z-index: 2;
+}
+
+.limitation_card:nth-child(3) {
+  z-index: 3;
+}
+
+.limitation_card:nth-child(4) {
+  z-index: 4;
+}
+
+.limitation_card:nth-child(5) {
+  z-index: 5;
+}
+
+.limitation-icon {
+  width: 2rem;
+}
+
+.limitation_title {
+  font-size: var(--fs_heading_s);
+  font-weight: var(--fw_700);
+  letter-spacing: calc(-5 * 0.01em);
+  color: var(--clr_gunmetal);
+}
+
+.limitation_card .body_text {
+  margin-block-start: 1rem;
 }
