@@ -49,6 +49,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: var(--ff_body);
   font-weight: var(--fw_400);
+  background-color: var(--clr_purewhite);
 }
 
 *,
@@ -446,4 +447,61 @@ input[type="number"] {
 
 .limitation_card .body_text {
   margin-block-start: 1rem;
+}
+
+@media screen and (min-width: 767px){
+  .logo {
+    width: 40px;
+  }
+
+  .hero_section {
+    padding-inline-start: 2.4375rem;
+    padding-inline-end: 2.6875rem;
+    margin-block-start: 2.5rem;
+  }
+
+  .hero_title {
+    padding-inline: 9.375rem;
+  }
+
+  .calculator {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    margin-block-start: 2.5rem;
+  }
+
+  .radio_wrapper {
+    margin-block-start: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    
+  }
+
+  .measure_wrapper {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-block-start: 2rem;
+  }
+
+  .bmi_output_card {
+    margin-block-start: 2rem;
+    border-radius: 16px 100px 100px 16px;
+    
+  }
+
+  .bmi_output_result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .grid_item_1 {
+    grid-column: 1;
+  }
+
+  .result_text {
+    grid-column: 2;
+    margin-block-start: 0;
+  }
 }
